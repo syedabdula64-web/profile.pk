@@ -11,6 +11,7 @@ import api from '../utils/api';
 import toast from 'react-hot-toast';
 import NotificationDropdown from '../components/NotificationDropdown';
 import ProfileLogo from '../components/ProfileLogo';
+import ThemeToggle from '../components/ThemeToggle';
 import './Dashboard.css';
 import DashOverview from './dashboard/DashOverview';
 import DashAbout from './dashboard/DashAbout';
@@ -280,6 +281,7 @@ export default function Dashboard() {
           </button>
           <div className="topbar-title gold-gradient-text">Command Center</div>
           <div className="topbar-actions">
+            <ThemeToggle />
             <NotificationDropdown />
             <a 
               href={`/p/${user?.username}`} 

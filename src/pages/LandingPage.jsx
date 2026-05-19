@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ProfileLogo from '../components/ProfileLogo';
+import ThemeToggle from '../components/ThemeToggle';
 import './LandingPage.css';
 
 export default function LandingPage() {
@@ -38,6 +39,7 @@ export default function LandingPage() {
           <div className="nav-r">
             <a href="#features" className="nl">Features</a>
             <a href="#how" className="nl">Process</a>
+            <ThemeToggle variant="minimal" />
             <Link to="/login" className="nb nb-o">Sign In</Link>
             <Link to="/register" className="nb nb-p">Get Started</Link>
           </div>
